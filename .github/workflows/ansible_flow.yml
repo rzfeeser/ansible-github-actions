@@ -11,5 +11,5 @@ jobs:
       - name: Run my playbook
         shell: bash
         run: |
-        ansible-playbook playbook.yml
+          ansible-playbook playbook.yml
         
