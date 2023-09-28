@@ -1,0 +1,12 @@
+name: Interaction of GitHub and Ansible Playbook
+
+on: [workflow_dispatch]
+
+jobs:
+  AnsibleExample:
+      runs-on: ubuntu-latest
+      steps:
+            - name: Checkout code (clone into the container)
+              uses: actions/checkout@v3
+            - name: Lint Ansible Playbook (this happens inside of the container)
+              uses: ansible/ansible-lint@main # or version tag instead of 'main'
