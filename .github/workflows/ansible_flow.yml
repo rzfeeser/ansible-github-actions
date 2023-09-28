@@ -12,4 +12,3 @@ jobs:
         shell: bash
         run: |
           ansible-playbook playbook.yml
-        
