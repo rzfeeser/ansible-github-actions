@@ -2,7 +2,7 @@
 - name: Playbook that sends HTTP GET to target URI
   hosts: localhost
   connection: local
-  gather_facts: true
+  gather_facts: true  # run setup module
   vars:
     urltolookup: "https://statsapi.web.nhl.com/api/v1/teams"
   tasks:
